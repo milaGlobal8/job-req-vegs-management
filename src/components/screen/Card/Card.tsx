@@ -12,7 +12,8 @@ const Card = (props: CardProps) => {
       flexDirection="column"
       maxHeight={320}
       maxWidth={345}
-      borderRadius={4}
+      borderRadius={14}
+      bgColor={COLOR.W1}
     >
       {/* 画像 */}
       <Image className={styles.img_area} src={src} alt={alt} />
@@ -29,10 +30,12 @@ const Card = (props: CardProps) => {
             {name}
           </Typography>
           {/* 在庫数 */}
-          <Typography color={COLOR.PINK1} weight="bold" size={17}>{stock}g</Typography>
+          <Typography color={COLOR.PINK1} weight="bold" size={17}>
+            {stock}g
+          </Typography>
         </Flexbox>
         {/* 説明 */}
-        <Typography>{desc}</Typography>
+        {desc && <Typography color={COLOR.B2}>{desc}</Typography>}{" "}
       </Flexbox>
     </Flexbox>
   );
