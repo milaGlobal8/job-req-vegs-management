@@ -1,5 +1,5 @@
 export type ImageProps = {
-  alt: string;
+  alt?: string;
   className?: string;
-  src: string;
+  src?: string;
 };
