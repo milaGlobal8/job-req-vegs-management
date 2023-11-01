@@ -16,6 +16,8 @@ export type FlexboxProps = {
   flexWrap?: "wrap";
   maxHeight?: number;
   maxWidth?: number;
+  height?: number;
+  width?: number;
   padding?: number;
   margin?: number;
   borderRadius?: number;
