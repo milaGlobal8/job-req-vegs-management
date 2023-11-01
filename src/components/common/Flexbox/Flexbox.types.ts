@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { Color } from "../../../types/Color.types";
 
 export type FlexboxProps = {
   children?: ReactNode;
@@ -18,4 +19,5 @@ export type FlexboxProps = {
   padding?: number;
   margin?: number;
   borderRadius?: number;
+  bgColor?: Color | null;
 };
