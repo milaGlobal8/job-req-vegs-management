@@ -12,4 +12,10 @@ export type FlexboxProps = {
   alignItems?: "start" | "center" | "end";
   flexDirection?: "column";
   gap?: number;
+  flexWrap?: "wrap";
+  maxHeight?: number;
+  maxWidth?: number;
+  padding?: number;
+  margin?: number;
+  borderRadius?: number;
 };

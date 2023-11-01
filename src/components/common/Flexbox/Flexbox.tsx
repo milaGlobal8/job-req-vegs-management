@@ -10,6 +10,12 @@ const Flexbox = (props: FlexboxProps) => {
     alignItems,
     flexDirection,
     gap,
+    flexWrap,
+    maxHeight,
+    maxWidth,
+    padding,
+    margin,
+    borderRadius,
   } = props;
   return (
     <div
@@ -19,6 +25,12 @@ const Flexbox = (props: FlexboxProps) => {
         alignItems: alignItems,
         flexDirection: flexDirection,
         gap: gap,
+        flexWrap: flexWrap,
+        maxHeight: maxHeight,
+        maxWidth: maxWidth,
+        padding: padding,
+        margin: margin,
+        borderRadius: borderRadius,
       }}
     >
       {children}
