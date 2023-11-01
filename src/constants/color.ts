@@ -12,6 +12,7 @@ export const COLOR = {
   ORANGE1: "orange1",
   ORANGE2: "orange2",
   PINK1: "pink1",
+  PINK2: "pink2",
 } as const;
 
 // as const : const assertionという機能でObjや値をreadonly(再代入不可)にする機能
