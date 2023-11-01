@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+body {
+  border: 1px solid black;
+  margin: 0 auto;
+  max-width: 675px;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+#root {
+  min-height: 100vh;
+}

@@ -1,5 +1,9 @@
-function App() {
-  return <></>;
-}
+import Routers from "./Routers";
 
-export default App;
+export default function App() {
+  return (
+    <>
+      <Routers />
+    </>
+  );
+}
