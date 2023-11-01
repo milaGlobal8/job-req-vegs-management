@@ -1,28 +1,46 @@
-import shiitake from "../../assets/shiitake.jpg";
-import tomato from "../../assets/tomato.jpg";
+import dayjs from "dayjs";
+import { useEffect, useState } from "react";
 import { Flexbox } from "../../components/common";
-import { Card, PageTitle, UpdatedAt } from "../../components/screen";
+import { Card, UpdatedAt } from "../../components/screen";
+import { useFetchVegs } from "../../hooks/useFetchVegs";
+import { Vegs } from "../../types/Vegs.types";
+import { Typography } from "./../../components/common";
+import styles from "./Home.module.scss";
 
 export default function Home() {
+  // state
+  const [vegs, setVegs] = useState<Vegs[]>([]);
+
+  // hooks
+  const { fetchVegs } = useFetchVegs();
+
+  // useEffect
+  useEffect(() => {
+    fetchVegs(setVegs);
+  }, []);
+
   return (
-    <Flexbox className="home_page" flexDirection="column" gap={20}>
-      <PageTitle>Home</PageTitle>
-      <UpdatedAt>2023/10/31 15:46</UpdatedAt>
+    <Flexbox className={styles.home_page} flexDirection="column" gap={20}>
+      <UpdatedAt>
+        {vegs.length !== 0
+          ? dayjs(vegs[0].updatedAt.toDate()).format("YYYY/MM/DD HH:mm:ss")
+          : "更新中..."}
+      </UpdatedAt>
       <Flexbox justifyContent="center" flexWrap="wrap" gap={30} margin={45}>
-        <Card
-          alt="トマト"
-          src={tomato}
-          name="Tomato"
-          stock={5637}
-          desc="Lorem ipsum dolor sit amet, consectetur fugit sapiente, vero ut labore? Vitae, aliquam?"
-        />
-        <Card
-          alt="しいたけ"
-          src={shiitake}
-          name="Shiitake"
-          stock={2636}
-          desc="Lorem ipsum dolor sit amet, consectetur fugit sapiente, vero ut labore? Vitae, aliquam?"
-        />
+        {vegs.length !== 0 ? (
+          vegs.map((veg) => (
+            <Card
+              key={crypto.randomUUID()}
+              alt={veg.alt}
+              src={veg.image}
+              name={veg.name}
+              stock={veg.stock}
+              desc={veg.desc}
+            />
+          ))
+        ) : (
+          <Typography>データを取得中...</Typography>
+        )}
       </Flexbox>
     </Flexbox>
   );

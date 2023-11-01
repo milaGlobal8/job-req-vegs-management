@@ -10,8 +10,7 @@ const Card = (props: CardProps) => {
     <Flexbox
       className={styles.card}
       flexDirection="column"
-      maxHeight={320}
-      maxWidth={345}
+      width={345}
       borderRadius={14}
       bgColor={COLOR.W1}
     >
@@ -31,11 +30,11 @@ const Card = (props: CardProps) => {
           </Typography>
           {/* 在庫数 */}
           <Typography color={COLOR.PINK1} weight="bold" size={17}>
-            {stock}g
+            {stock}箱
           </Typography>
         </Flexbox>
         {/* 説明 */}
-        {desc && <Typography color={COLOR.B2}>{desc}</Typography>}{" "}
+        {desc && <Typography color={COLOR.B2}>{desc}</Typography>}
       </Flexbox>
     </Flexbox>
   );
