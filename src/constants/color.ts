@@ -3,8 +3,6 @@ export const COLOR = {
   B2: "b2",
   W1: "w1",
   W2: "w2",
-  W3: "w3",
-  W4: "w4",
   RED1: "red1",
   BLUE1: "blue1",
   GREEN1: "green1",
