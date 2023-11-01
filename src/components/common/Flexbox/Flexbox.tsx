@@ -16,6 +16,7 @@ const Flexbox = (props: FlexboxProps) => {
     padding,
     margin,
     borderRadius,
+    bgColor,
   } = props;
   return (
     <div
@@ -31,6 +32,7 @@ const Flexbox = (props: FlexboxProps) => {
         padding: padding,
         margin: margin,
         borderRadius: borderRadius,
+        backgroundColor: bgColor ? `var(--${bgColor})` : undefined,
       }}
     >
       {children}
