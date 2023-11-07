@@ -23,7 +23,7 @@ export default function Home() {
     <Flexbox className={styles.home_page} flexDirection="column" gap={20}>
       <UpdatedAt>
         {vegs.length !== 0
-          ? dayjs(vegs[0].updatedAt.toDate()).format("YYYY/MM/DD HH:mm:ss")
+          ? dayjs(vegs[0].updatedAt.toDate()).format("YYYY/MM/DD HH:mm")
           : "更新中..."}
       </UpdatedAt>
       <Flexbox justifyContent="center" flexWrap="wrap" gap={30} margin={45}>
