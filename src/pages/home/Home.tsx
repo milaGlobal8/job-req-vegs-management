@@ -1,10 +1,9 @@
 import dayjs from "dayjs";
 import { useEffect, useState } from "react";
 import { Flexbox } from "../../components/common";
-import { Card, UpdatedAt } from "../../components/screen";
+import { Card, Loading, UpdatedAt } from "../../components/screen";
 import { useFetchVegs } from "../../hooks/useFetchVegs";
 import { Vegs } from "../../types/Vegs.types";
-import { Typography } from "./../../components/common";
 import styles from "./Home.module.scss";
 
 export default function Home() {
@@ -39,7 +38,7 @@ export default function Home() {
             />
           ))
         ) : (
-          <Typography>データを取得中...</Typography>
+          <Loading loadingMsg="データ取得中..." />
         )}
       </Flexbox>
     </Flexbox>
