@@ -1,7 +1,7 @@
 import dayjs from "dayjs";
 import { useEffect, useState } from "react";
-import { Flexbox } from "../../components/common";
-import { Card, Loading, UpdatedAt } from "../../components/screen";
+import { Flexbox, Typography } from "../../components/common";
+import { Card, Loading, UpdatedAt, Version } from "../../components/screen";
 import { useFetchVegs } from "../../hooks/useFetchVegs";
 import { Vegs } from "../../types/Vegs.types";
 import styles from "./Home.module.scss";
@@ -41,6 +41,10 @@ export default function Home() {
           <Loading loadingMsg="データ取得中..." />
         )}
       </Flexbox>
+      {/* アプリバージョン情報 */}
+      <Version>
+        <Typography>Version {process.env.REACT_APP_VERSION}</Typography>
+      </Version>
     </Flexbox>
   );
 }
