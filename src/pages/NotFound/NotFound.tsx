@@ -1,9 +1,13 @@
-import { Box, Typography } from "../../components/common";
+import { Flexbox, Typography } from "../../components/common";
 import styles from "./NotFound.module.scss";
 
 const NotFound = () => {
   return (
-    <Box className={styles.container}>
+    <Flexbox
+      className={styles.container}
+      flexDirection="column"
+      alignItems="center"
+    >
       <Typography
         className={`${styles.neoText} ${styles.pulsate} ${styles.status}`}
       >
@@ -14,7 +18,7 @@ const NotFound = () => {
       >
         Page Not Found
       </Typography>
-    </Box>
+    </Flexbox>
   );
 };
 
