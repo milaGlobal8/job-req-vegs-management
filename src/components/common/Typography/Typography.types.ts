@@ -5,8 +5,8 @@ export type TypographyProps = {
   children?: ReactNode;
   className?: string;
   family?: "Hiragino Sans" | "Hiragino Kaku Gothic Pro";
-  size?: number;
+  fontSize?: number;
   color?: Color | null;
-  align?: "start" | "center" | "end" | "justify";
-  weight?: "normal" | "bold" | "lighter" | "bolder";
+  textAlign?: "start" | "center" | "end" | "justify";
+  fontWeight?: "normal" | "bold" | "lighter" | "bolder";
 };

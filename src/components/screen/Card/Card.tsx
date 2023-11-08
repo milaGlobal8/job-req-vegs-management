@@ -25,11 +25,11 @@ const Card = (props: CardProps) => {
       >
         <Flexbox justifyContent="space-between">
           {/* 商品名 */}
-          <Typography weight="bold" size={20}>
+          <Typography fontWeight="bold" fontSize={20}>
             {name}
           </Typography>
           {/* 在庫数 */}
-          <Typography color={COLOR.PINK1} weight="bold" size={17}>
+          <Typography color={COLOR.PINK1} fontWeight="bold" fontSize={17}>
             {stock}箱
           </Typography>
         </Flexbox>
