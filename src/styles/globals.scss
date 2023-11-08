@@ -1,3 +1,4 @@
+// 「:root」の意味は、このサイトに載っている → https://freelance-engineer.hatenablog.jp/entry/2023/02/25/011850
 :root {
   --b1: #484848;
   --b2: #828282;
@@ -11,4 +12,24 @@
   --orange2: #fcf1dd;
   --pink1: #ed6f77;
   --pink2: #ff3a51;
+}
+
+.fadeIn {
+  // アニメーションの名前（好きに名づけて良いが、「slide」や「bounce」といった名前も公式が用意している）
+  animation-name: fadeIn;
+  // 1回のアニメーション周期が完了するまでの時間
+  animation-duration: 500ms;
+  // アニメーションがそれぞれの周期の中でどのように進行するかを設定する
+  animation-timing-function: ease-in-out;
+
+  @keyframes fadeIn {
+    0% {
+      // opacity:0はまったく見えない状態（透明）
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transition: transform 0.6s cubic-bezier(0.37, 0, 0.63, 1);
+    }
+  }
 }
