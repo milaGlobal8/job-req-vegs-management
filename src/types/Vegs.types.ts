@@ -10,5 +10,5 @@ export type Vegs = {
   price?: number;
   shape?: "袋" | "箱" | "g";
   stock?: number;
-  updatedAt?: Timestamp;
+  updatedAt: Timestamp;
 };
