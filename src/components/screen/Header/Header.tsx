@@ -1,4 +1,4 @@
-import Logo from "../../../assets/logo.jpg";
+import Logo from "../../../assets/logo/logo.jpg";
 import { Flexbox, Image } from "../../common";
 import styles from "./Header.module.scss";
 
