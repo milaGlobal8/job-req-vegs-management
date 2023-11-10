@@ -4,6 +4,7 @@ export const COLOR = {
   W1: "w1",
   W2: "w2",
   RED1: "red1",
+  RED2: "red2",
   BLUE1: "blue1",
   BLUE2: "blue2",
   GREEN1: "green1",
