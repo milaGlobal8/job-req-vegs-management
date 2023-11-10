@@ -12,6 +12,8 @@ const Typography = (props: TypographyProps) => {
     color = COLOR.B1,
     textAlign = "start",
     fontWeight = "normal",
+    textShadow,
+    textDecoration,
   } = props;
   return (
     <span
@@ -22,6 +24,8 @@ const Typography = (props: TypographyProps) => {
         fontFamily: family,
         fontSize: fontSize,
         fontWeight: fontWeight,
+        textShadow: textShadow,
+        textDecoration: textDecoration,
       }}
     >
       {children}

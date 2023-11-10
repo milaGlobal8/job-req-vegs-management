@@ -9,4 +9,7 @@ export type TypographyProps = {
   color?: Color | null;
   textAlign?: "start" | "center" | "end" | "justify";
   fontWeight?: "normal" | "bold" | "lighter" | "bolder";
+  textShadow?: string;
+  textDecoration?: string;
+  display?: string;
 };
