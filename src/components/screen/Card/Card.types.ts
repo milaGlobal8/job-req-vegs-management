@@ -1,7 +1,31 @@
 export type CardProps = {
+  // A品
+  // 袋
+  aBagQty: number;
+  aBagStock: number;
+  aBagPrice: number;
+  // 箱
+  aBoxQty: number;
+  aBoxStock: number;
+  aBoxPrice: number;
+  // g
+  aGramStock: number;
+  aGramPrice: number;
+  // B品
+  // 袋
+  bBagQty: number;
+  bBagStock: number;
+  bBagPrice: number;
+  // 箱
+  bBoxQty: number;
+  bBoxStock: number;
+  bBoxPrice: number;
+  // g
+  bGramStock: number;
+  bGramPrice: number;
+  // 他のフィールド
   alt?: string;
-  src?: string;
-  name?: string;
-  stock?: number;
   desc?: string;
+  image?: string;
+  name?: string;
 };
