@@ -8,20 +8,24 @@ const Typography = (props: TypographyProps) => {
     children,
     className,
     family = "Hiragino Sans",
-    size,
+    fontSize,
     color = COLOR.B1,
-    align = "start",
-    weight = "normal",
+    textAlign = "start",
+    fontWeight = "normal",
+    textShadow,
+    textDecoration,
   } = props;
   return (
     <span
       className={classNames(styles.typography, className)}
       style={{
         color: color ? `var(--${color})` : undefined,
-        textAlign: align,
+        textAlign: textAlign,
         fontFamily: family,
-        fontSize: size,
-        fontWeight: weight,
+        fontSize: fontSize,
+        fontWeight: fontWeight,
+        textShadow: textShadow,
+        textDecoration: textDecoration,
       }}
     >
       {children}

@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Header } from "./components/screen";
-import { Home } from "./pages";
+import { Home, NotFound } from "./pages";
 
 export default function Routers() {
   return (
@@ -9,6 +9,7 @@ export default function Routers() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </>

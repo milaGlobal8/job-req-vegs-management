@@ -21,14 +21,6 @@ export const useFetchVegs = () => {
     // リアルタイム取得
     onSnapshot(q, (QuerySnapshot) => {
       let docs = QuerySnapshot.docs.map((doc) => doc.data());
-      docs.map((doc) => ({
-        alt: doc.alt,
-        desc: doc.desc,
-        image: doc.image,
-        name: doc.name,
-        stock: doc.stock,
-        updatedAt: doc.updatedAt,
-      }));
       setVegs(docs);
     });
   };
