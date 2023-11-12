@@ -60,7 +60,7 @@ const Section = (props: SectionProps) => {
       >
         {/* 商品説明 */}
         <Typography fontWeight="bold" fontSize={15}>
-          内容量：{isGram ? "×" : `${qty}g`}
+          内容量：{isGram ? "お客様次第" : `${qty}g`}
         </Typography>
         {/* 値段と在庫数 */}
         <Flexbox justifyContent="space-between">
