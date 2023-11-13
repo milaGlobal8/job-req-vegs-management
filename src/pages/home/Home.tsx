@@ -6,7 +6,7 @@ import { useFetchVegs } from "../../hooks/useFetchVegs";
 import { Vegs } from "../../types/Vegs.types";
 import styles from "./Home.module.scss";
 
-export default function Home() {
+const Home = () => {
   // state
   const [vegs, setVegs] = useState<Vegs[]>([]);
 
@@ -70,4 +70,6 @@ export default function Home() {
       </Version>
     </Flexbox>
   );
-}
+};
+
+export default Home;
