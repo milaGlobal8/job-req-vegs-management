@@ -1,4 +1,4 @@
-import { COLOR } from "../../../constants/color";
+import { COLOR } from "constants/color";
 import { Flexbox, Image, Typography } from "../../atoms";
 import { Tag } from "../Tag";
 import styles from "./Section.module.scss";
