@@ -1,4 +1,4 @@
-import { Flexbox, Typography } from "../../components/common";
+import { Flexbox, Typography } from "components/atoms";
 import styles from "./NotFound.module.scss";
 
 const NotFound = () => {
