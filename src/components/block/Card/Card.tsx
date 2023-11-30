@@ -48,13 +48,7 @@ const Card = (props: CardProps) => {
       {/* 画像 */}
       <Image className={styles.img_area} src={image} alt={alt} />
       {/* 中身 */}
-      <Flexbox
-        flexDirection="column"
-        // maxHeight={180}
-        maxWidth={345}
-        padding={16}
-        gap={15}
-      >
+      <Flexbox flexDirection="column" maxWidth={345} padding={16} gap={15}>
         {/* 商品名と簡単な説明 */}
         <Flexbox className="name_desc" flexDirection="column" gap={5}>
           {/* 商品名 */}
