@@ -1,46 +1,67 @@
-# Getting Started with Create React App
+# 草加ファーム石関【直売所在庫確認アプリ】
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+草加ファーム石関【直売所在庫確認アプリ】は、直売所で販売する野菜の「在庫数・価格・販売状況」を手軽にリアルタイムで確認できるアプリケーションです。
 
-## Available Scripts
+## 特徴
 
-In the project directory, you can run:
+― その日に販売している野菜の在庫数や価格、販売状況（販売中 or 完売）をリアルタイムで確認することができます。
+― 更新した日時がリアルタイムで表示されます。
 
-### `npm start`
+## インストール
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+このプロジェクトをローカルで実行するには、以下の手順を実行してください：
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. リポジトリをクローンします。
+2. プロジェクトディレクトリに移動します。
+3. `npm install` を実行して依存関係をインストールします。
+4. `npm start` を実行して開発サーバーを起動します。
 
-### `npm test`
+## 使い方
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+開発サーバーが実行されている場合は、ブラウザを開き
+`http://localhost:3000`にアクセスしてアプリケーションを表示します。
+表示された画面に、直売所で販売しているその日の在庫数や価格、販売状況（販売中 or 完売）が表示され、直売所に関する情報をリアルタイムで確認することができます。
 
-### `npm run build`
+## 使用技術
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+― React
+― TypeScript
+― CSS
+― SCSS
+― HTML
+― Firebase
+― MUI Icons
+― classnames
+― dayjs
+― react-loading
+― react-router-dom
+― sass
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## フォルダ構造
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+― `src/`：ソースコードファイルが含まれています。
+ ― `assets/`：UI に使用するアイコンやヘッダーロゴが含まれています。
+  ― `icon/`：販売方法（袋・箱・量）をわかりやすくするためのアイコンが含まれています。（拡張子はすべて「.svg」）
+   ― `gold/`：A 品の販売方法に使用するアイコンが含まれています。
+   ― `silver/`：B 品の販売方法に使用するアイコンが含まれています。
+  ― `logo/`：ヘッダーロゴが含まれています。（拡張子は「.jpg」）
+ ― `components/`：React コンポーネントが含まれています。
+  ― `atoms/`：最小単位のコンポーネントが含まれています。それぞれのコンポーネントは HTML タグで構成されています。最も抽象度の高いコンポーネントです。
+  ― `block/`：atoms を組み合わせたコンポーネントが含まれています。抽象度は atoms よりやや低くなります。
+ ― `constants/`：定数（アプリケーション上で変更されない値）が定義されているファイルが含まれています。
+ ― `firebase/`：firebase の設定ファイルが含まれています。
+ ― `hooks/`：アプリケーション上で動作するロジックが書かれたファイルが含まれています。
+ ― `pages/`：atoms,block が組み合わさって構成された一番大きいコンポーネントが含まれています。アプリケーション上ではページ（Home や NotFound）を意味するコンポーネントが含まれています。
+  ― `Home/`：直売所で販売する野菜の「在庫数・価格・販売状況」が表示される当アプリのメインにあたるページです。
+  ― `NotFound/`：リクエストされたリソースが見つからなかった場合に表示されるエラーページです。このページは、ユーザーに対してリクエストされたページやリソースが存在しないことを伝えるためのものです。
+ ― `styles/`：アプリケーション全体で使用するスタイルをまとめたファイルが含まれています。
+ ― `types/`：アプリケーション全体で使用する変数の型定義をまとめたファイルが含まれています。
+ ― `App.tsx`：Routers.tsx の親コンポーネントです。
+ ― `index.tsx`：アプリケーションのエントリーポイントです。
+ ― `react-app.env.d.ts`：Create React App によって自動生成されるファイルです。明示的に編集する必要はありません。
+ ― `Routers.tsx`：react-router-dom を使用して、ルーティングに関する役割を果たしているコンポーネントです。
 
-### `npm run eject`
+## ライセンス
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+このプロジェクトは [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) の下で公開されています。詳細については、[LICENSE](LICENSE) ファイルを参照してください。
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
