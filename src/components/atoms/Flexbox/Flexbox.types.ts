@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { Color } from "../../../types/Color.types";
+import { Color } from "types/Color.types";
 
 export type FlexboxProps = {
   children?: ReactNode;
@@ -16,6 +16,8 @@ export type FlexboxProps = {
   flexWrap?: "wrap";
   flexGrow?: number;
   flexShrink?: number;
+  bgColor?: Color | null;
+  color?: Color | null;
   maxHeight?: number;
   maxWidth?: number;
   minHeight?: number;
@@ -28,8 +30,6 @@ export type FlexboxProps = {
   borderTop?: string;
   borderBottom?: string;
   borderRadius?: number;
-  bgColor?: Color | null;
-  color?: Color | null;
   textAlign?: "start" | "center" | "end" | "justify";
   textDecoration?: string;
   opacity?: number;

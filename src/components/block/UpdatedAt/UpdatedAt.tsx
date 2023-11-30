@@ -1,6 +1,5 @@
 import UpdateIcon from "@mui/icons-material/Update";
-
-import { Flexbox, Typography } from "../../common";
+import { Flexbox, Typography } from "../../atoms";
 import { UpdatedAtProps } from "./UpdatedAt.types";
 
 const UpdatedAt = (props: UpdatedAtProps) => {

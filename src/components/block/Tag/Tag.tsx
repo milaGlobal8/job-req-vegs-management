@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { Flexbox, Typography } from "../../common";
+import { Flexbox, Typography } from "../../atoms";
 import styles from "./Tag.module.scss";
 import { TagProps } from "./Tag.types";
 
@@ -9,27 +9,22 @@ const Tag = (props: TagProps) => {
     tagName,
     bgColor,
     color,
+    border,
     margin,
     marginTop,
     flexGrow,
     flexShrink,
-    border,
   } = props;
 
   return (
     <Flexbox
       className={classNames(styles.tag, className)}
-      justifyContent="center"
-      alignItems="center"
       bgColor={bgColor}
-      borderRadius={4}
-      padding={8}
-      maxWidth={50}
+      border={border}
       margin={margin}
       marginTop={marginTop}
       flexGrow={flexGrow}
       flexShrink={flexShrink}
-      border={border}
     >
       <Typography color={color} fontWeight="bold" textShadow="1px 1px 1px #000">
         {tagName}

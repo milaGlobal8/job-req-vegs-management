@@ -1,5 +1,5 @@
-import { COLOR } from "../../../constants/color";
-import { Flexbox, Image, Typography } from "../../common";
+import { COLOR } from "constants/color";
+import { Flexbox, Image, Typography } from "../../atoms";
 import { Tag } from "../Tag";
 import styles from "./Section.module.scss";
 import { SectionProps } from "./Section.types";
@@ -74,8 +74,7 @@ const Section = (props: SectionProps) => {
           textAlign="end"
           color={COLOR.PINK1}
         >
-          残り{stock}
-          {shape}
+          {`残り${stock}${shape}`}
         </Typography>
       </Flexbox>
     </Flexbox>

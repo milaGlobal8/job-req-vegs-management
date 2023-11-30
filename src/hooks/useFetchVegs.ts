@@ -5,8 +5,8 @@ import {
   orderBy,
   query,
 } from "firebase/firestore";
+import { Vegs } from "types/Vegs.types";
 import { firebaseApp } from "../firebase/firebaseConfig";
-import { Vegs } from "../types/Vegs.types";
 
 export const useFetchVegs = () => {
   // 野菜データを取得する

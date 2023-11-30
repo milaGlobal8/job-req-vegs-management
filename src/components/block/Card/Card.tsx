@@ -1,13 +1,13 @@
 // ゴールドアイコン
-import GoldBagIcon from "../../../assets/icon/gold/bag.svg";
-import GoldBoxIcon from "../../../assets/icon/gold/box.svg";
-import GoldGramIcon from "../../../assets/icon/gold/gram.svg";
+import GoldBagIcon from "assets/icon/gold/bag.svg";
+import GoldBoxIcon from "assets/icon/gold/box.svg";
+import GoldGramIcon from "assets/icon/gold/gram.svg";
 // シルバーアイコン
-import SilverBagIcon from "../../../assets/icon/silver/bag.svg";
-import SilverBoxIcon from "../../../assets/icon/silver/box.svg";
-import SilverGramIcon from "../../../assets/icon/silver/gram.svg";
-import { COLOR } from "../../../constants/color";
-import { Flexbox, Image, Typography } from "../../common";
+import SilverBagIcon from "assets/icon/silver/bag.svg";
+import SilverBoxIcon from "assets/icon/silver/box.svg";
+import SilverGramIcon from "assets/icon/silver/gram.svg";
+import { COLOR } from "constants/color";
+import { Flexbox, Image, Typography } from "../../atoms";
 import { Section } from "../Section";
 import { Tag } from "../Tag";
 import styles from "./Card.module.scss";
@@ -48,13 +48,7 @@ const Card = (props: CardProps) => {
       {/* 画像 */}
       <Image className={styles.img_area} src={image} alt={alt} />
       {/* 中身 */}
-      <Flexbox
-        flexDirection="column"
-        // maxHeight={180}
-        maxWidth={345}
-        padding={16}
-        gap={15}
-      >
+      <Flexbox flexDirection="column" maxWidth={345} padding={16} gap={15}>
         {/* 商品名と簡単な説明 */}
         <Flexbox className="name_desc" flexDirection="column" gap={5}>
           {/* 商品名 */}

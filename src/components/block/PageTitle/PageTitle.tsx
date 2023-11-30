@@ -1,4 +1,4 @@
-import { Flexbox, Typography } from "../../common";
+import { Flexbox, Typography } from "../../atoms";
 import styles from "./PageTitle.module.scss";
 import { PageTitleProps } from "./PageTitle.types";
 

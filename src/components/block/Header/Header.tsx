@@ -1,5 +1,5 @@
-import Logo from "../../../assets/logo/logo.jpg";
-import { Flexbox, Image } from "../../common";
+import Logo from "assets/logo/logo.jpg";
+import { Flexbox, Image } from "../../atoms";
 import styles from "./Header.module.scss";
 
 const Header = () => {

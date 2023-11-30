@@ -1,6 +1,6 @@
+import { COLOR } from "constants/color";
 import ReactLoading from "react-loading";
-import { COLOR } from "../../../constants/color";
-import { Flexbox, Typography } from "../../common";
+import { Flexbox, Typography } from "../../atoms";
 import { LoadingProps } from "./Loading.types";
 
 const Loading = (props: LoadingProps) => {

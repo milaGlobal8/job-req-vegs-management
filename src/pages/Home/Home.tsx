@@ -1,9 +1,9 @@
+import { Flexbox, Typography } from "components/atoms";
+import { Card, Loading, UpdatedAt, Version } from "components/block";
 import dayjs from "dayjs";
+import { useFetchVegs } from "hooks/useFetchVegs";
 import { useEffect, useState } from "react";
-import { Flexbox, Typography } from "../../components/common";
-import { Card, Loading, UpdatedAt, Version } from "../../components/screen";
-import { useFetchVegs } from "../../hooks/useFetchVegs";
-import { Vegs } from "../../types/Vegs.types";
+import { Vegs } from "types/Vegs.types";
 import styles from "./Home.module.scss";
 
 const Home = () => {

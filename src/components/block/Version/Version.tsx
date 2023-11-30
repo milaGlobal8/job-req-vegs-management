@@ -1,4 +1,4 @@
-import { Flexbox } from "../../common";
+import { Flexbox } from "../../atoms";
 import { VersionProps } from "./Version.types";
 
 const Version = (props: VersionProps) => {
