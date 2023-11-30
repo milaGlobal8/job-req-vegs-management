@@ -1,6 +1,6 @@
+import { Header } from "components/block";
+import { Home, NotFound } from "pages";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Header } from "./components/screen";
-import { Home, NotFound } from "./pages";
 
 export default function Routers() {
   return (
