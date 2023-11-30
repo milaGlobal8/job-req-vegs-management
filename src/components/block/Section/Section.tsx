@@ -74,8 +74,7 @@ const Section = (props: SectionProps) => {
           textAlign="end"
           color={COLOR.PINK1}
         >
-          残り{stock}
-          {shape}
+          {`残り${stock}${shape}`}
         </Typography>
       </Flexbox>
     </Flexbox>
