@@ -1,12 +1,12 @@
 // ゴールドアイコン
-import GoldBagIcon from "../../../assets/icon/gold/bag.svg";
-import GoldBoxIcon from "../../../assets/icon/gold/box.svg";
-import GoldGramIcon from "../../../assets/icon/gold/gram.svg";
+import GoldBagIcon from "assets/icon/gold/bag.svg";
+import GoldBoxIcon from "assets/icon/gold/box.svg";
+import GoldGramIcon from "assets/icon/gold/gram.svg";
 // シルバーアイコン
-import SilverBagIcon from "../../../assets/icon/silver/bag.svg";
-import SilverBoxIcon from "../../../assets/icon/silver/box.svg";
-import SilverGramIcon from "../../../assets/icon/silver/gram.svg";
-import { COLOR } from "../../../constants/color";
+import SilverBagIcon from "assets/icon/silver/bag.svg";
+import SilverBoxIcon from "assets/icon/silver/box.svg";
+import SilverGramIcon from "assets/icon/silver/gram.svg";
+import { COLOR } from "constants/color";
 import { Flexbox, Image, Typography } from "../../atoms";
 import { Section } from "../Section";
 import { Tag } from "../Tag";
